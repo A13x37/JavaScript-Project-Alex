@@ -1,0 +1,352 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width:100vw;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+
+/* Nav Bar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13%;
+}
+
+.navbar img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#logo {
+    height: 50px;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+}
+
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: rgb(79, 79, 178);
+    text-decoration: underline solid rgb(79, 79, 178);
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header Section */
+.banner {
+    width: 100vw;
+    min-height: 500px;
+    grid-row: 1 / 2;
+    margin-bottom: 3rem;
+    background-image: url(./images/restraunt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 80%;
+    
+}
+
+
+/* Homepage Main Section */
+.foodImg {
+    width: 100%;
+    height: 233px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.cards {
+    height: 500px;
+    width: 400px;
+    background-color: rgb(151, 178, 98);
+    border-radius: 12px;
+}
+
+.cardContent {
+    padding: 15px 15px;
+}
+
+.itemHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discription {
+    margin-top: 15px;
+}
+
+#promo {
+    display: flex;
+    justify-content: space-around;
+}
+
+#promo h1 {
+    font-size: 2.5em;
+    margin-right: 20%;
+}
+
+#promo button {
+    background-color: #F4CE14;
+    color: black;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+#promo button:hover {
+    background-color: #fddf44;
+    transition: 0.5s;
+}
+
+#specials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.orderBtn {
+    background-color: #F4CE14;
+    color: black;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-top: 65px;
+    margin-left: 240px;
+}
+
+.orderBtn:hover {
+    background-color: #fddf44;
+    transition: 0.5s;
+}
+
+
+/* Menu Section */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuBox{
+    display: flex;
+    width: 80vw;
+    height: 200px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px;
+}
+
+.menuBox img {
+    height: 200px;
+    width: 50%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.menuContent {
+    margin: 10px;
+}
+
+.menuHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuHeading h3 {
+    margin-right: 35px;
+    margin-top: 10px;
+}
+
+.menuBtn {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
+    background-color: #F4CE14;
+    color: black;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 80%;
+}
+
+.menuBtn:hover {
+    background-color: #fddf44;
+    transition: 0.5s;
+}
+
+
+/* Footer Section */
+.footer-links {
+    list-style: none;
+    font-size: 17px;
+}
+
+.footer-links li {
+    margin-top: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px 13%;
+    margin-top: 3em;
+}
+
+footer img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div p {
+    margin-top: 15px;
+}
+
+
+/* Extras */
+#popupBox {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 80px;
+    background-color: white;
+    margin: 15px 0;
+    box-shadow: 0 0 10px black;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    transform: translateX(100%);
+    animation: slide 0.3s linear forwards ;
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.popup img {
+    margin: 0 20px;
+}
+
+.popup::after {
+    position: absolute;
+    background-color: green;
+    width: 30px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    content: '';
+}
+
+.ordersBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: aliceblue;
+    visibility: hidden;
+}
+
+.openBar {
+    visibility: visible;
+    transform: translateX(-100%);
+    animation: slideRight 0.3s linear forwards ;
+}
+
+@keyframes slideRight {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.closeBar {
+    visibility: hidden;
+}
+
+.barHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barHeader p {
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+.barHeader p:hover {
+    color: red;
+}
+
+.barContent {
+    padding: 30px 16px;
+}

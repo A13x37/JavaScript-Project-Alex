@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Little Lemon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <a href="index.html"><img src="./images/logo.png" alt="Little Lemon Logo" id="logo"></a>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="index.html">Reservations</a>
+                </li>
+                <li>
+                    <a href="menu.html">Order Online</a>
+                </li>
+            </ul>
+            <img src="./images/bag.jpg" onclick="openSideBar()">
+        </nav>
+
+        <!-- Header Section -->
+        <header class="banner">
+
+        </header>
+
+        <!-- Main Section -->
+        <main>
+            <section id="promo">
+                <h1>This Weeks Specials!</h1>
+                <a href="menu.html"><button>Order Online</button></a>
+            </section>
+            <section id="specials">
+                <div class="cards">
+                    <img src="./images/cake.jpg" class="foodImg" alt="Image of a cake">
+                    <div class="cardContent">
+                        <div class="itemHeading">
+                            <h3>Lemon Cheesecake</h3>
+                            <p>$4.59</p>
+                        </div>
+                        <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" onClick="openPopup()" class="orderBtn">Add Order</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/spagetty.jpg" class="foodImg" alt="Image of spagetty">
+                    <div class="cardContent">
+                        <div class="itemHeading">
+                            <h3>Spagetty</h3>
+                            <p>$6.98</p>
+                        </div>
+                        <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" onClick="openPopup()" class="orderBtn">Add Order</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/pizza.jpg" class="foodImg" alt="Image of a pizza">
+                    <div class="cardContent">
+                        <div class="itemHeading">
+                            <h3>Pizza</h3>
+                            <p>$8.98</p>
+                        </div>
+                        <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" onClick="openPopup()" class="orderBtn">Add Order</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div>
+                <a href="index.html"><img src="./images/small-logo.png"></a>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Reservations</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Order Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <p>Address: <br> 12345 street, city</p>
+                <p>Phone: <br> +01 123 456 789</p>
+                <p>Email: <br> littlelemon@gmail.com</p>
+            </div>
+            <div>
+                <h2>Social Media</h2>
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Extras -->
+        <div id="popupBox"></div>
+        <div class="ordersBar" id="sideBar">
+            <div class="barContent">
+                <div class="barHeader">
+                    <h1>Orders</h1>
+                    <p onclick="closeSideBar()">X</p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

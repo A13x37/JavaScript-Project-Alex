@@ -47,7 +47,7 @@
                             <p>$4.59</p>
                         </div>
                         <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button type="button" onClick="openPopup()" class="orderBtn">Add Order</button>
+                        <button type="button" onClick="addOrder('cake.jpg', 'Lemon Cheesecake'); openPopup()" class="orderBtn">Add Order</button>
                     </div>
                 </div>
                 <div class="cards">
@@ -58,7 +58,7 @@
                             <p>$6.98</p>
                         </div>
                         <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button type="button" onClick="openPopup()" class="orderBtn">Add Order</button>
+                        <button type="button" onClick="addOrder('spagetty.jpg', 'Spagetty'); openPopup()" class="orderBtn">Add Order</button>
                     </div>
                 </div>
                 <div class="cards">
@@ -69,7 +69,7 @@
                             <p>$8.98</p>
                         </div>
                         <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button type="button" onClick="openPopup()" class="orderBtn">Add Order</button>
+                        <button type="button" onClick="addOrder('pizza.jpg', 'Pizza'); openPopup()" class="orderBtn">Add Order</button>
                     </div>
                 </div>
             </section>
@@ -127,6 +127,7 @@
                     <h1>Orders</h1>
                     <p onclick="closeSideBar()">X</p>
                 </div>
+                <div id="list"></div>
             </div>
         </div>
         <script src="script.js"></script>
